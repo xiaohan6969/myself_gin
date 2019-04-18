@@ -2,6 +2,14 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/chenjiandongx/go-echarts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/gobuffalo/envy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/gobuffalo/packd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/gobuffalo/packr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/gobuffalo/syncx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/joho/godotenv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/pkg/errors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/rogpeppe/go-internal" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/360EntSecGroup-Skylar/excelize" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/fsnotify/fsnotify" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gin-contrib/sse" vcs="Git" />

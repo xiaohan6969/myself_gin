@@ -4,6 +4,7 @@ import (
 	"config"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+	"log"
 	"net/http"
 	"routers"
 )
@@ -18,5 +19,6 @@ func main() {
 	err := http.ListenAndServe(viper.GetString("port"), g)
 	if err != nil {
 		//logging.Error(err.Error())
+		log.Println(err)
 	}
 }

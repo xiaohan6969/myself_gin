@@ -2,32 +2,30 @@ package ReadExcel
 
 import (
 	"common"
-	"fmt"
-	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
 func ReadExcel(c *gin.Context) {
 	//接收前端发来的文件
-	file, _, err := c.Request.FormFile("file")
-	if err != nil {
-		c.JSON(http.StatusOK, gin.H{
-			"code":    common.ERROR,
-			"message": "文件读取失败，请按格式填写excel",
-		})
-		return
-	}
-	//读取文件中的内容
-	xlsx, err := excelize.OpenReader(file)
-	fmt.Println(xlsx)
-	if err != nil {
-		c.JSON(http.StatusOK, gin.H{
-			"code":    common.ERROR,
-			"message": "文件读取失败，请按格式填写excel",
-		})
-		return
-	}
+	//file, _, err := c.Request.FormFile("file")
+	//if err != nil {
+	//	c.JSON(http.StatusOK, gin.H{
+	//		"code":    common.ERROR,
+	//		"message": "文件读取失败，请按格式填写excel",
+	//	})
+	//	return
+	//}
+	////读取文件中的内容
+	//xlsx, err := excelize.OpenReader(file)
+	//fmt.Println(xlsx)
+	//if err != nil {
+	//	c.JSON(http.StatusOK, gin.H{
+	//		"code":    common.ERROR,
+	//		"message": "文件读取失败，请按格式填写excel",
+	//	})
+	//	return
+	//}
 
 	//index := 2
 	//for true {
@@ -108,6 +106,6 @@ func ReadExcel(c *gin.Context) {
 	//*********返回给前端的数据
 	c.JSON(http.StatusOK, gin.H{
 		"code":    common.SUCCESS,
-		"message": "excel文件批量发货成功",
+		"message": "excel文件导入成功",
 	})
 }
