@@ -15,7 +15,7 @@ func Load(g *gin.Engine) *gin.Engine {
 	g.GET("/pf/practice", ReadExcel.ReadExcel)
 	//通过数据生成可视化html页面
 	g.GET("/pf/echarts", goEcharts.GoEcharts)
-
+ 	g.POST("/sad/sada",goEcharts.AAAAA)
 	g.NoRoute(func(c *gin.Context) {
 		c.String(http.StatusNotFound, "The incorrect API route.")
 	})

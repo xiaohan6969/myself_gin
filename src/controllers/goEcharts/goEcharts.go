@@ -1,8 +1,10 @@
 package goEcharts
 
 import (
+	"fmt"
 	"github.com/chenjiandongx/go-echarts/charts"
 	"github.com/gin-gonic/gin"
+	"gopkg.in/mgo.v2/bson"
 	"log"
 	"os"
 )
@@ -19,4 +21,13 @@ func GoEcharts(c *gin.Context) {
 		log.Println(err)
 	}
 	a.Render(f)
+}
+
+func AAAAA(c *gin.Context)  {
+	type A struct {
+		AA bson.ObjectId `json:"ObjectId"`
+ 	}
+	a := A{}
+	c.Bind(&a)
+	fmt.Println("===",a.AA)
 }
