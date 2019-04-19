@@ -13,6 +13,7 @@ func main() {
 	if err := config.Init(""); err != nil {
 		panic(err)
 	}
+	//asda
 	gin.SetMode(viper.GetString("runmode"))
 	g := gin.Default()
 	routers.Load(g)
